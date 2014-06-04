@@ -1,0 +1,771 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2732AE60-F944-4C34-BE5B-82A8BE4CFF4B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GameName1</RootNamespace>
+    <AssemblyName>GameName1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\WindowsGL\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\WindowsGL\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BulletHell\Game.cs" />
+    <Compile Include="BulletHell\SAP.cs" />
+    <Compile Include="BulletHell\Scripts\AIChasePlayer.cs" />
+    <Compile Include="BulletHell\Scripts\AIWander.cs" />
+    <Compile Include="BulletHell\Scripts\BloomCamera.cs" />
+    <Compile Include="BulletHell\Scripts\Enemy.cs" />
+    <Compile Include="BulletHell\Scripts\Entity.cs" />
+    <Compile Include="BulletHell\Scripts\EnemyManager.cs" />
+    <Compile Include="BulletHell\Scripts\Init.cs" />
+    <Compile Include="BulletHell\Scripts\Player.cs" />
+    <Compile Include="BulletHell\Scripts\PlayerManager.cs" />
+    <Compile Include="BulletHell\Scripts\PlayerMovement.cs" />
+    <Compile Include="BulletHell\Scripts\PlayerStatus.cs" />
+    <Compile Include="BulletHell\Scripts\PlayerWeapon.cs" />
+    <Compile Include="BulletHell\Scripts\TrackMouse.cs" />
+    <Compile Include="BulletHell\Scripts\WaveManager.cs" />
+    <Compile Include="BulletHell\Steering.cs" />
+    <Compile Include="Debug.cs" />
+    <Compile Include="DebugLabel.cs" />
+    <Compile Include="DebugStats.cs" />
+    <Compile Include="Digger\Components\Attack.cs" />
+    <Compile Include="Digger\Components\Hands.cs" />
+    <Compile Include="Digger\Components\Movement.cs" />
+    <Compile Include="Digger\Components\Physic.cs" />
+    <Compile Include="Digger\Components\Player.cs" />
+    <Compile Include="Digger\Components\PlayerInput.cs" />
+    <Compile Include="Digger\Components\Velocity.cs" />
+    <Compile Include="Digger\Game.cs" />
+    <Compile Include="Digger\Move.cs" />
+    <Compile Include="Digger\Physics.cs" />
+    <Compile Include="Digger\Settings.cs" />
+    <Compile Include="Digger\World\Block.cs" />
+    <Compile Include="Digger\World\Terrain.cs" />
+    <Compile Include="Digger\World\TerrainCollider.cs" />
+    <Compile Include="Digger\World\TerrainRenderer.cs" />
+    <Compile Include="Gnomoria\Game.cs" />
+    <Compile Include="Gnomoria\Scripts\GameInput.cs" />
+    <Compile Include="Gnomoria\Scripts\MainMenu.cs" />
+    <Compile Include="Gnomoria\Scripts\Navigation\GraphDirection.cs" />
+    <Compile Include="Gnomoria\Scripts\Navigation\NavGraphAStar.cs" />
+    <Compile Include="Gnomoria\Scripts\Navigation\NavLevel.cs" />
+    <Compile Include="Gnomoria\Scripts\Navigation\NavManager.cs" />
+    <Compile Include="Gnomoria\Prefabs.cs" />
+    <Compile Include="Gnomoria\Scripts\AI\AIManager.cs" />
+    <Compile Include="Gnomoria\Scripts\Navigation\NavSegment.cs" />
+    <Compile Include="Gnomoria\Scripts\Navigation\NavSegmentOverlap.cs" />
+    <Compile Include="Gnomoria\Scripts\SpriteSheetType.cs" />
+    <Compile Include="Gnomoria\Scripts\Tools\DigWall.cs" />
+    <Compile Include="Gnomoria\Scripts\Tools\Inspector.cs" />
+    <Compile Include="Gnomoria\Scripts\Tools\Tool.cs" />
+    <Compile Include="Gnomoria\Scripts\Tools\ToolManager.cs" />
+    <Compile Include="Gnomoria\Scripts\WorldRendering\WorldRenderLevel.cs" />
+    <Compile Include="Gnomoria\Scripts\WorldRendering\WorldRenderSegment.cs" />
+    <Compile Include="Gnomoria\Scripts\WorldRendering\WorldRenderSegmentOverlap.cs" />
+    <Compile Include="Gnomoria\Scripts\World\MapTile.cs" />
+    <Compile Include="Gnomoria\Scripts\World\TileDescriptor.cs" />
+    <Compile Include="Gnomoria\Scripts\MoveObject.cs" />
+    <Compile Include="Gnomoria\Scripts\Tiles\WorldObject.cs" />
+    <Compile Include="Gnomoria\Scripts\ToolType.cs" />
+    <Compile Include="Gnomoria\Scripts\World\WorldObjectRenderer.cs" />
+    <Compile Include="Gnomoria\Scripts\GameObjects\Characters\ZombieWorker.cs" />
+    <Compile Include="Gnomoria\Scripts\GameObjects\Placeable\DirtRamp.cs" />
+    <Compile Include="Gnomoria\Scripts\GameObjects\Placeable\DirtWall.cs" />
+    <Compile Include="Gnomoria\Scripts\GameObjects\Placeable\PlaceableObject.cs" />
+    <Compile Include="Gnomoria\Scripts\GameObjects\Tiles\Floors\BaseFloor.cs" />
+    <Compile Include="Gnomoria\Scripts\GameObjects\Tiles\Walls\BaseWall.cs" />
+    <Compile Include="Gnomoria\Scripts\GameObjects\Tiles\Walls\DarkDirtWall.cs" />
+    <Compile Include="Gnomoria\Scripts\GameObjects\Tiles\Walls\DirtWall.cs" />
+    <Compile Include="Gnomoria\Scripts\GameObjects\Tiles\Walls\LightDirtWall.cs" />
+    <Compile Include="Gnomoria\Scripts\World\WorldObjectType.cs" />
+    <Compile Include="Gnomoria\Scripts\World\WorldRenderDirection.cs" />
+    <Compile Include="Gnomoria\Scripts\World\WorldRenderer.cs" />
+    <Compile Include="Gnomoria\Scripts\World\TileQuadrant.cs" />
+    <Compile Include="Gnomoria\Scripts\World\WorldManager.cs" />
+    <Compile Include="Gnomoria\Scripts\World\WorldSprite.cs" />
+    <Compile Include="Gnomoria\Scripts\World\WorldSpriteSheet.cs" />
+    <Compile Include="MonoGameExtensions.cs" />
+    <Compile Include="PI\Game.cs" />
+    <Compile Include="PI\Prefabs.cs" />
+    <Compile Include="PI\Scripts\Build.cs" />
+    <Compile Include="PI\Scripts\Building.cs" />
+    <Compile Include="PI\Scripts\CommandCenter.cs" />
+    <Compile Include="PI\Scripts\Extractor.cs" />
+    <Compile Include="PI\Scripts\HUD.cs" />
+    <Compile Include="PI\Scripts\Planet.cs" />
+    <Compile Include="PI\Scripts\Player.cs" />
+    <Compile Include="PI\Scripts\SpriteClick.cs" />
+    <Compile Include="PI\Scripts\TrackObject.cs" />
+    <Compile Include="Roguelike\AStar.cs" />
+    <Compile Include="Roguelike\Game.cs" />
+    <Compile Include="Roguelike\Prefabs.cs" />
+    <Compile Include="Roguelike\Scripts\ApplyDamage.cs" />
+    <Compile Include="Roguelike\Scripts\Collider.cs" />
+    <Compile Include="Roguelike\Scripts\ConstantVelocity.cs" />
+    <Compile Include="Roguelike\Scripts\JsonAnimation.cs" />
+    <Compile Include="Roguelike\Scripts\Ricochet.cs" />
+    <Compile Include="Roguelike\Scripts\DestroyTimer.cs" />
+    <Compile Include="Roguelike\Scripts\FlashSpriteOnDamage.cs" />
+    <Compile Include="Roguelike\Scripts\Knockback.cs" />
+    <Compile Include="Roguelike\Scripts\MeleeSwing.cs" />
+    <Compile Include="Roguelike\Scripts\Physics.cs" />
+    <Compile Include="Roguelike\Scripts\Map.cs" />
+    <Compile Include="Roguelike\Scripts\MoveObject.cs" />
+    <Compile Include="Roguelike\Scripts\Player.cs" />
+    <Compile Include="Roguelike\Scripts\ScrollText.cs" />
+    <Compile Include="Roguelike\Scripts\SetObjectPosition.cs" />
+    <Compile Include="Roguelike\Scripts\SimpleAI.cs" />
+    <Compile Include="Roguelike\Scripts\Stats.cs" />
+    <Compile Include="Roguelike\Scripts\TrackObject.cs" />
+    <Compile Include="Roguelike\Scripts\Weapon.cs" />
+    <Compile Include="Roguelike\Systems\Animations\AnimationSystem.cs" />
+    <Compile Include="Roguelike\Systems\Items\Item.cs" />
+    <Compile Include="Roguelike\Systems\Items\Melee.cs" />
+    <Compile Include="Roguelike\Systems\Items\Projectile.cs" />
+    <Compile Include="Roguelike\Systems\Items\Usable.cs" />
+    <Compile Include="Roguelike\Systems\Items\Weapon.cs" />
+    <Compile Include="Space\AIControllerOld.cs" />
+    <Compile Include="Space\AIWanderAggresive.cs" />
+    <Compile Include="Space\AIWanderer.cs" />
+    <Compile Include="Space\Bullet.cs" />
+    <Compile Include="Space\ConstantVelocity.cs" />
+    <Compile Include="Space\Map.cs" />
+    <Compile Include="Space\ParallaxLayer2.cs" />
+    <Compile Include="Space\ParallaxLayer3.cs" />
+    <Compile Include="Space\ParallaxLayer1.cs" />
+    <Compile Include="Space\DestroyTimer.cs" />
+    <Compile Include="Space\Enemy.cs" />
+    <Compile Include="Space\ParallaxLayer0.cs" />
+    <Compile Include="Space\ParticleEmitter.cs" />
+    <Compile Include="Space\Player.cs" />
+    <Compile Include="Space\PowerUp.cs" />
+    <Compile Include="Space\ScrollingText.cs" />
+    <Compile Include="Space\Settings.cs" />
+    <Compile Include="Space\Ship.cs" />
+    <Compile Include="Space\Ships\BasicShip.cs" />
+    <Compile Include="Space\Ships\Ship.cs" />
+    <Compile Include="Space\SimpleGun.cs" />
+    <Compile Include="Space\Engine.cs" />
+    <Compile Include="Space\Expander.cs" />
+    <Compile Include="Space\Follow.cs" />
+    <Compile Include="Space\LinearVelocity.cs" />
+    <Compile Include="Space\LookAt.cs" />
+    <Compile Include="Space\Move.cs" />
+    <Compile Include="Space\PlayerController.cs" />
+    <Compile Include="Space\PlayerControllerOld.cs" />
+    <Compile Include="Space\Rotate.cs" />
+    <Compile Include="Space\ShowDirection.cs" />
+    <Compile Include="Space\SimpleLaser.cs" />
+    <Compile Include="Space\SpriteQuadTree.cs" />
+    <Compile Include="Space\World\Sector.cs" />
+    <Compile Include="Space\World\SolarSystem.cs" />
+    <Compile Include="Space\SpaceStation.cs" />
+    <Compile Include="Space\Steering.cs" />
+    <Compile Include="Space\SteeringAI.cs" />
+    <Compile Include="Space\TargetableObjects.cs" />
+    <Compile Include="Space\TargetRecticle.cs" />
+    <Compile Include="Space\Track.cs" />
+    <Compile Include="Space\TrackMouse.cs" />
+    <Compile Include="Space\WeaponSystem.cs" />
+    <Compile Include="Space\Game1.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Space\World\Universe.cs" />
+    <Compile Include="SRPG\AStar.cs" />
+    <Compile Include="SRPG\Game.cs" />
+    <Compile Include="SRPG\Prefabs.cs" />
+    <Compile Include="SRPG\Scripts\CommandMenu.cs" />
+    <Compile Include="SRPG\Scripts\Core.cs" />
+    <Compile Include="SRPG\Scripts\Map.cs" />
+    <Compile Include="SRPG\Scripts\MapHighlighter.cs" />
+    <Compile Include="SRPG\Scripts\MoveObject.cs" />
+    <Compile Include="SRPG\Scripts\Player.cs" />
+    <Compile Include="SRPG\Scripts\TrackObject.cs" />
+    <Compile Include="SRPG\Scripts\TurnManager.cs" />
+    <Compile Include="SRPG\Systems\GUI.cs" />
+    <Compile Include="SRPG\Systems\UI\Window.cs" />
+    <Compile Include="TopDown\Components\Movement.cs" />
+    <Compile Include="TopDown\Components\MovementAnimation.cs" />
+    <Compile Include="TopDown\Components\Velocity.cs" />
+    <Compile Include="TopDown\Components\World\MapRenderer.cs" />
+    <Compile Include="TopDown\Controllers\Player.cs" />
+    <Compile Include="TopDown\Game.cs" />
+    <Compile Include="TopDown\Prefabs\Character.cs" />
+    <Compile Include="TopDown\Prefabs\Player.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\WindowsGL\MonoGame.Framework.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="OpenTK">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\WindowsGL\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\WindowsGL\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.Sdl">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\WindowsGL\Tao.Sdl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="C:\Program Files %28x86%29\MonoGame\v3.0\Assemblies\WindowsGL\SDL.dll">
+      <Link>SDL.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\1\achievements.png" />
+    <Content Include="Content\img\1\agent.png" />
+    <Content Include="Content\img\1\axe.png" />
+    <Content Include="Content\img\1\barsheet.png" />
+    <Content Include="Content\img\1\bat.png" />
+    <Content Include="Content\img\1\beachnpc.png" />
+    <Content Include="Content\img\1\bluesword.png" />
+    <Content Include="Content\img\1\border.png" />
+    <Content Include="Content\img\1\boss.png" />
+    <Content Include="Content\img\1\chest.png" />
+    <Content Include="Content\img\1\clotharmor.png" />
+    <Content Include="Content\img\1\coder.png" />
+    <Content Include="Content\img\1\crab.png" />
+    <Content Include="Content\img\1\death.png" />
+    <Content Include="Content\img\1\deathknight.png" />
+    <Content Include="Content\img\1\desertnpc.png" />
+    <Content Include="Content\img\1\eye.png" />
+    <Content Include="Content\img\1\firefox.png" />
+    <Content Include="Content\img\1\forestnpc.png" />
+    <Content Include="Content\img\1\goblin.png" />
+    <Content Include="Content\img\1\goldenarmor.png" />
+    <Content Include="Content\img\1\goldensword.png" />
+    <Content Include="Content\img\1\guard.png" />
+    <Content Include="Content\img\1\hand.png" />
+    <Content Include="Content\img\1\item-axe.png" />
+    <Content Include="Content\img\1\item-bluesword.png" />
+    <Content Include="Content\img\1\item-burger.png" />
+    <Content Include="Content\img\1\item-cake.png" />
+    <Content Include="Content\img\1\item-clotharmor.png" />
+    <Content Include="Content\img\1\item-firepotion.png" />
+    <Content Include="Content\img\1\item-flask.png" />
+    <Content Include="Content\img\1\item-goldenarmor.png" />
+    <Content Include="Content\img\1\item-goldensword.png" />
+    <Content Include="Content\img\1\item-leatherarmor.png" />
+    <Content Include="Content\img\1\item-mailarmor.png" />
+    <Content Include="Content\img\1\item-morningstar.png" />
+    <Content Include="Content\img\1\item-platearmor.png" />
+    <Content Include="Content\img\1\item-redarmor.png" />
+    <Content Include="Content\img\1\item-redsword.png" />
+    <Content Include="Content\img\1\item-sword1.png" />
+    <Content Include="Content\img\1\item-sword2.png" />
+    <Content Include="Content\img\1\king.png" />
+    <Content Include="Content\img\1\lavanpc.png" />
+    <Content Include="Content\img\1\leatherarmor.png" />
+    <Content Include="Content\img\1\loot.png" />
+    <Content Include="Content\img\1\mailarmor.png" />
+    <Content Include="Content\img\1\morningstar.png" />
+    <Content Include="Content\img\1\nyan.png" />
+    <Content Include="Content\img\1\octocat.png" />
+    <Content Include="Content\img\1\ogre.png" />
+    <Content Include="Content\img\1\platearmor.png" />
+    <Content Include="Content\img\1\priest.png" />
+    <Content Include="Content\img\1\rat.png" />
+    <Content Include="Content\img\1\redarmor.png" />
+    <Content Include="Content\img\1\redsword.png" />
+    <Content Include="Content\img\1\rick.png" />
+    <Content Include="Content\img\1\scientist.png" />
+    <Content Include="Content\img\1\shadow16.png" />
+    <Content Include="Content\img\1\skeleton.png" />
+    <Content Include="Content\img\1\skeleton2.png" />
+    <Content Include="Content\img\1\snake.png" />
+    <Content Include="Content\img\1\sorcerer.png" />
+    <Content Include="Content\img\1\sparks.png" />
+    <Content Include="Content\img\1\spectre.png" />
+    <Content Include="Content\img\1\spritesheet.png" />
+    <Content Include="Content\img\1\sword.png" />
+    <Content Include="Content\img\1\sword1.png" />
+    <Content Include="Content\img\1\sword2.png" />
+    <Content Include="Content\img\1\talk.png" />
+    <Content Include="Content\img\1\target.png" />
+    <Content Include="Content\img\1\tilesheet.png" />
+    <Content Include="Content\img\1\villagegirl.png" />
+    <Content Include="Content\img\1\villager.png" />
+    <Content Include="Content\img\1\wizard.png" />
+    <Content Include="Content\img\1\wood.png" />
+    <Content Include="Content\img\1\wood2.png" />
+    <Content Include="Content\img\1\wood3.png" />
+    <Content Include="Content\img\2\achievements.png" />
+    <Content Include="Content\img\2\agent.png" />
+    <Content Include="Content\img\2\axe.png" />
+    <Content Include="Content\img\2\barsheet.png" />
+    <Content Include="Content\img\2\bat.png" />
+    <Content Include="Content\img\2\beachnpc.png" />
+    <Content Include="Content\img\2\bluesword.png" />
+    <Content Include="Content\img\2\border.png" />
+    <Content Include="Content\img\2\boss.png" />
+    <Content Include="Content\img\2\chest.png" />
+    <Content Include="Content\img\2\clotharmor.png" />
+    <Content Include="Content\img\2\coder.png" />
+    <Content Include="Content\img\2\crab.png" />
+    <Content Include="Content\img\2\death.png" />
+    <Content Include="Content\img\2\deathknight.png" />
+    <Content Include="Content\img\2\desertnpc.png" />
+    <Content Include="Content\img\2\eye.png" />
+    <Content Include="Content\img\2\firefox.png" />
+    <Content Include="Content\img\2\forestnpc.png" />
+    <Content Include="Content\img\2\goblin.png" />
+    <Content Include="Content\img\2\goldenarmor.png" />
+    <Content Include="Content\img\2\goldensword.png" />
+    <Content Include="Content\img\2\guard.png" />
+    <Content Include="Content\img\2\hand.png" />
+    <Content Include="Content\img\2\item-axe.png" />
+    <Content Include="Content\img\2\item-bluesword.png" />
+    <Content Include="Content\img\2\item-burger.png" />
+    <Content Include="Content\img\2\item-cake.png" />
+    <Content Include="Content\img\2\item-clotharmor.png" />
+    <Content Include="Content\img\2\item-firepotion.png" />
+    <Content Include="Content\img\2\item-flask.png" />
+    <Content Include="Content\img\2\item-goldenarmor.png" />
+    <Content Include="Content\img\2\item-goldensword.png" />
+    <Content Include="Content\img\2\item-leatherarmor.png" />
+    <Content Include="Content\img\2\item-mailarmor.png" />
+    <Content Include="Content\img\2\item-morningstar.png" />
+    <Content Include="Content\img\2\item-platearmor.png" />
+    <Content Include="Content\img\2\item-redarmor.png" />
+    <Content Include="Content\img\2\item-redsword.png" />
+    <Content Include="Content\img\2\item-sword1.png" />
+    <Content Include="Content\img\2\item-sword2.png" />
+    <Content Include="Content\img\2\king.png" />
+    <Content Include="Content\img\2\lavanpc.png" />
+    <Content Include="Content\img\2\leatherarmor.png" />
+    <Content Include="Content\img\2\loot.png" />
+    <Content Include="Content\img\2\mailarmor.png" />
+    <Content Include="Content\img\2\morningstar.png" />
+    <Content Include="Content\img\2\nyan.png" />
+    <Content Include="Content\img\2\octocat.png" />
+    <Content Include="Content\img\2\ogre.png" />
+    <Content Include="Content\img\2\platearmor.png" />
+    <Content Include="Content\img\2\priest.png" />
+    <Content Include="Content\img\2\rat.png" />
+    <Content Include="Content\img\2\redarmor.png" />
+    <Content Include="Content\img\2\redsword.png" />
+    <Content Include="Content\img\2\rick.png" />
+    <Content Include="Content\img\2\scientist.png" />
+    <Content Include="Content\img\2\shadow16.png" />
+    <Content Include="Content\img\2\skeleton.png" />
+    <Content Include="Content\img\2\skeleton2.png" />
+    <Content Include="Content\img\2\snake.png" />
+    <Content Include="Content\img\2\sorcerer.png" />
+    <Content Include="Content\img\2\sparks.png" />
+    <Content Include="Content\img\2\spectre.png" />
+    <Content Include="Content\img\2\spritesheet.png" />
+    <Content Include="Content\img\2\sword.png" />
+    <Content Include="Content\img\2\sword1.png" />
+    <Content Include="Content\img\2\sword2.png" />
+    <Content Include="Content\img\2\talk.png" />
+    <Content Include="Content\img\2\target.png" />
+    <Content Include="Content\img\2\tilesheet.png" />
+    <Content Include="Content\img\2\villagegirl.png" />
+    <Content Include="Content\img\2\villager.png" />
+    <Content Include="Content\img\2\wizard.png" />
+    <Content Include="Content\img\2\wood.png" />
+    <Content Include="Content\img\2\wood2.png" />
+    <Content Include="Content\img\2\wood3.png" />
+    <Content Include="Content\img\3\achievements.png" />
+    <Content Include="Content\img\3\agent.png" />
+    <Content Include="Content\img\3\axe.png" />
+    <Content Include="Content\img\3\barsheet.png" />
+    <Content Include="Content\img\3\bat.png" />
+    <Content Include="Content\img\3\beachnpc.png" />
+    <Content Include="Content\img\3\bluesword.png" />
+    <Content Include="Content\img\3\border.png" />
+    <Content Include="Content\img\3\boss.png" />
+    <Content Include="Content\img\3\chest.png" />
+    <Content Include="Content\img\3\clotharmor.png" />
+    <Content Include="Content\img\3\coder.png" />
+    <Content Include="Content\img\3\crab.png" />
+    <Content Include="Content\img\3\death.png" />
+    <Content Include="Content\img\3\deathknight.png" />
+    <Content Include="Content\img\3\desertnpc.png" />
+    <Content Include="Content\img\3\eye.png" />
+    <Content Include="Content\img\3\firefox.png" />
+    <Content Include="Content\img\3\forestnpc.png" />
+    <Content Include="Content\img\3\goblin.png" />
+    <Content Include="Content\img\3\goldenarmor.png" />
+    <Content Include="Content\img\3\goldensword.png" />
+    <Content Include="Content\img\3\guard.png" />
+    <Content Include="Content\img\3\hand.png" />
+    <Content Include="Content\img\3\item-axe.png" />
+    <Content Include="Content\img\3\item-bluesword.png" />
+    <Content Include="Content\img\3\item-burger.png" />
+    <Content Include="Content\img\3\item-cake.png" />
+    <Content Include="Content\img\3\item-clotharmor.png" />
+    <Content Include="Content\img\3\item-firepotion.png" />
+    <Content Include="Content\img\3\item-flask.png" />
+    <Content Include="Content\img\3\item-goldenarmor.png" />
+    <Content Include="Content\img\3\item-goldensword.png" />
+    <Content Include="Content\img\3\item-leatherarmor.png" />
+    <Content Include="Content\img\3\item-mailarmor.png" />
+    <Content Include="Content\img\3\item-morningstar.png" />
+    <Content Include="Content\img\3\item-platearmor.png" />
+    <Content Include="Content\img\3\item-redarmor.png" />
+    <Content Include="Content\img\3\item-redsword.png" />
+    <Content Include="Content\img\3\item-sword1.png" />
+    <Content Include="Content\img\3\item-sword2.png" />
+    <Content Include="Content\img\3\king.png" />
+    <Content Include="Content\img\3\lavanpc.png" />
+    <Content Include="Content\img\3\leatherarmor.png" />
+    <Content Include="Content\img\3\loot.png" />
+    <Content Include="Content\img\3\mailarmor.png" />
+    <Content Include="Content\img\3\morningstar.png" />
+    <Content Include="Content\img\3\nyan.png" />
+    <Content Include="Content\img\3\octocat.png" />
+    <Content Include="Content\img\3\ogre.png" />
+    <Content Include="Content\img\3\platearmor.png" />
+    <Content Include="Content\img\3\priest.png" />
+    <Content Include="Content\img\3\rat.png" />
+    <Content Include="Content\img\3\redarmor.png" />
+    <Content Include="Content\img\3\redsword.png" />
+    <Content Include="Content\img\3\rick.png" />
+    <Content Include="Content\img\3\scientist.png" />
+    <Content Include="Content\img\3\shadow16.png" />
+    <Content Include="Content\img\3\skeleton.png" />
+    <Content Include="Content\img\3\skeleton2.png" />
+    <Content Include="Content\img\3\snake.png" />
+    <Content Include="Content\img\3\sorcerer.png" />
+    <Content Include="Content\img\3\sparks.png" />
+    <Content Include="Content\img\3\spectre.png" />
+    <Content Include="Content\img\3\spritesheet.png" />
+    <Content Include="Content\img\3\sword.png" />
+    <Content Include="Content\img\3\sword1.png" />
+    <Content Include="Content\img\3\sword2.png" />
+    <Content Include="Content\img\3\talk.png" />
+    <Content Include="Content\img\3\target.png" />
+    <Content Include="Content\img\3\tilesheet.png" />
+    <Content Include="Content\img\3\villagegirl.png" />
+    <Content Include="Content\img\3\villager.png" />
+    <Content Include="Content\img\3\wizard.png" />
+    <Content Include="Content\img\3\wood.png" />
+    <Content Include="Content\img\3\wood2.png" />
+    <Content Include="Content\img\3\wood3.png" />
+    <Content Include="Content\img\common\empty.cur" />
+    <Content Include="Content\img\common\favicon.png" />
+    <Content Include="Content\img\common\loading-error.png" />
+    <Content Include="Content\img\common\loading.png" />
+    <Content Include="Content\img\common\promo-title.jpg" />
+    <Content Include="Content\img\common\screenshot.jpg" />
+    <Content Include="Content\img\common\spinner.gif" />
+    <Content Include="Content\img\common\thingy.png" />
+    <Content Include="Content\Textures\bullet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Textures\bullethell\BloomCombine.fx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Textures\bullethell\BloomExtract.fx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Textures\bullethell\bullet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Textures\bullethell\cursor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Textures\bullethell\enemy1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Textures\bullethell\enemy2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Textures\bullethell\enemy3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Textures\bullethell\enemy_100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Textures\bullethell\GaussianBlur.fx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Textures\bullethell\player.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Textures\button.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Textures\cockpit1Green.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Textures\cockpit2Green.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Textures\cockpit3Green.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Textures\cockpit4Green.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Textures\cockpit5Green.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Textures\PurplePlanet-FT.jpg" />
+    <Content Include="Content\Textures\streak.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Roguelike\design.html" />
+    <None Include="Content\Fonts\arial_0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Scenes\Test.json" />
+    <None Include="Content\sprites\agent.json" />
+    <None Include="Content\sprites\arrow.json" />
+    <None Include="Content\sprites\axe.json" />
+    <None Include="Content\sprites\bat.json" />
+    <None Include="Content\sprites\beachnpc.json" />
+    <None Include="Content\sprites\bluesword.json" />
+    <None Include="Content\sprites\boss.json" />
+    <None Include="Content\sprites\chest.json" />
+    <None Include="Content\sprites\clotharmor.json" />
+    <None Include="Content\sprites\coder.json" />
+    <None Include="Content\sprites\crab.json" />
+    <None Include="Content\sprites\death.json" />
+    <None Include="Content\sprites\deathknight.json" />
+    <None Include="Content\sprites\desertnpc.json" />
+    <None Include="Content\sprites\eye.json" />
+    <None Include="Content\sprites\firefox.json" />
+    <None Include="Content\sprites\forestnpc.json" />
+    <None Include="Content\sprites\goblin.json" />
+    <None Include="Content\sprites\goldenarmor.json" />
+    <None Include="Content\sprites\goldensword.json" />
+    <None Include="Content\sprites\guard.json" />
+    <None Include="Content\sprites\hand.json" />
+    <None Include="Content\sprites\impact.json" />
+    <None Include="Content\sprites\item-axe.json" />
+    <None Include="Content\sprites\item-bluesword.json" />
+    <None Include="Content\sprites\item-burger.json" />
+    <None Include="Content\sprites\item-cake.json" />
+    <None Include="Content\sprites\item-clotharmor.json" />
+    <None Include="Content\sprites\item-firepotion.json" />
+    <None Include="Content\sprites\item-flask.json" />
+    <None Include="Content\sprites\item-goldenarmor.json" />
+    <None Include="Content\sprites\item-goldensword.json" />
+    <None Include="Content\sprites\item-leatherarmor.json" />
+    <None Include="Content\sprites\item-mailarmor.json" />
+    <None Include="Content\sprites\item-morningstar.json" />
+    <None Include="Content\sprites\item-platearmor.json" />
+    <None Include="Content\sprites\item-redarmor.json" />
+    <None Include="Content\sprites\item-redsword.json" />
+    <None Include="Content\sprites\item-sword1.json" />
+    <None Include="Content\sprites\item-sword2.json" />
+    <None Include="Content\sprites\king.json" />
+    <None Include="Content\sprites\lavanpc.json" />
+    <None Include="Content\sprites\leatherarmor.json" />
+    <None Include="Content\sprites\loot.json" />
+    <None Include="Content\sprites\mailarmor.json" />
+    <None Include="Content\sprites\morningstar.json" />
+    <None Include="Content\sprites\nyan.json" />
+    <None Include="Content\sprites\octocat.json" />
+    <None Include="Content\sprites\ogre.json" />
+    <None Include="Content\sprites\platearmor.json" />
+    <None Include="Content\sprites\priest.json" />
+    <None Include="Content\sprites\rat.json" />
+    <None Include="Content\sprites\redarmor.json" />
+    <None Include="Content\sprites\redsword.json" />
+    <None Include="Content\sprites\rick.json" />
+    <None Include="Content\sprites\scientist.json" />
+    <None Include="Content\sprites\shadow16.json" />
+    <None Include="Content\sprites\skeleton.json" />
+    <None Include="Content\sprites\skeleton2.json" />
+    <None Include="Content\sprites\snake.json" />
+    <None Include="Content\sprites\sorcerer.json" />
+    <None Include="Content\sprites\sparks.json" />
+    <None Include="Content\sprites\spectre.json" />
+    <None Include="Content\sprites\sword.json" />
+    <None Include="Content\sprites\sword1.json" />
+    <None Include="Content\sprites\sword2.json" />
+    <None Include="Content\sprites\talk.json" />
+    <None Include="Content\sprites\target.json" />
+    <None Include="Content\sprites\villagegirl.json" />
+    <None Include="Content\sprites\villager.json" />
+    <None Include="Content\sprites\wizard.json" />
+    <None Include="Content\Textures\desert_tiles.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\droidag3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\fog.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\fog2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\fog3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\fog4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\fog5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\fog6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\icon-background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Content\Textures\iso\building.png" />
+    <Content Include="Content\Textures\iso\dirt.png" />
+    <Content Include="Content\Textures\iso\dirt2.png" />
+    <Content Include="Content\Textures\iso\dirtwall.png" />
+    <Content Include="Content\Textures\iso\res-low-1.png" />
+    <Content Include="Content\Textures\iso\res-low-2.png" />
+    <Content Include="Content\Textures\iso\res-low-3.png" />
+    <Content Include="Content\Textures\iso\res-mid-1.png" />
+    <Content Include="Content\Textures\iso\res-mid-2.png" />
+    <Content Include="Content\Textures\iso\res-mid-3.png" />
+    <Content Include="Content\Textures\iso\res-mid-4.png" />
+    <Content Include="Content\Textures\iso\res-mid-5.png" />
+    <Content Include="Content\Textures\iso\res-up-1.png" />
+    <Content Include="Content\Textures\iso\res-up-2.png" />
+    <Content Include="Content\Textures\iso\res-up-3.png" />
+    <Content Include="Content\Textures\iso\res-up-4.png" />
+    <Content Include="Content\Textures\iso\tile.png" />
+    <None Include="Content\Textures\MainBackground.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\mouse_cursor.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\selection.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\pack.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\particles.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\player.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\se_free_dirt_texture.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\se_free_grass_texture.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\se_free_ground_texture.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\se_free_mud_texture.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\se_free_road_texture.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\se_free_rock_texture.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\se_free_wood_texture.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\ship.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\sprites_map_claudius.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\sprites_map_laila.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\starfield.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\sword.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\sword2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\terrain.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\terrain2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\wavebeam.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\Tiles\plain.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\Tiles\shadow-hort.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Textures\Tiles\shadow-vert.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Content\Textures\Tiles\plain2.png" />
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Space\Controllers\" />
+    <Folder Include="Space\Misc\" />
+    <Folder Include="Space\Physics\" />
+    <Folder Include="Space\Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\disseminate\Disseminate.Framework\Disseminate.csproj">
+      <Project>{b030e2f7-eb89-4667-ab5c-e3e82cfe6445}</Project>
+      <Name>Disseminate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\zSprite\zSprite - MonoGame.csproj">
+      <Project>{6b357f46-c4c8-4bf6-8f15-bb4957cc68d0}</Project>
+      <Name>zSprite - MonoGame</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Fonts\arial.fnt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Skins\Default.skin" />
+    <None Include="Content\Skins\Green.skin" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
